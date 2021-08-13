@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Portal</title>
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css"> 
+</head>
+<body>
+    
+    <centre><h1>{{title}}</h1></centre>
+
+<a href="/statuses/add">Add a new Status</a>
+
+ <div class="container"> 
+    <table class="table">
+        <thread class="thead-dark">
+            <th>Status</th>
+        </thread>
+
+    {{#each dataset}}
+    <tr class="table-primary">
+        <th scope="row">{{this.status}}</th>
+    </tr>
+    {{/each}}
+
+
+</table>
+</div>
+
+</body>
+<script src="/javascripts/bootstrap.min.js">
+</html>
+
+
+
